@@ -8,40 +8,52 @@
 </head>
 <body>
    <header class="header">
-    <div class="header__left"></div>
+    <div class="header__left">
+        <button class="menu-button">&#9776;</button>
+    </div>
     <div class="header__center">
         <div class="header__logo">
             <img src="images/RainyDays_Logo.png" alt="RainyDays Logo">
         </div>
     </div>  
     <div class="header__right">
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="index.html">Home</a></li>
-                <li class="header__nav-item"><a href="about.html">About</a></li>
-                <li class="header__nav-item"><a href="services.html">Services</a></li>
-                <li class="header__nav-item"><a href="contact.html">Contact</a></li>
+       
+    </div>
+   </header>
+   <div class="menu-overlay">
+    <div class="menu-content">
+        <span class="close-menu">&times;</span>
+        <nav class="menu-nav">
+            <ul class="menu-nav-list">
+                <li class="menu-nav-item"><a href="index.html">Home</a></li>
+                <li class="menu-nav-item"><a href="about.html">About</a></li>
+                <li class="menu-nav-item"><a href="services.html">Services</a></li>
+                <li class="menu-nav-item"><a href="contact.html">Contact</a></li>
+                <li class="menu-nav-item"><a href="animals.html">Choose an Animal</a></li>
             </ul>
         </nav>
     </div>
-   </header>
+   </div>
    <main class="main-content">
     <h1>Welcome to RainyDays</h1>
     <p>Your one-stop solution for all weather-related needs.</p>
     <button class="cta-button">open modal</button>
    </main>
+   <div class="overlay-modal">
    <modal>
     <div class="modal-content">
         <span class="close-button">&times;</span>
         <h2>Subscribe to our Newsletter</h2>
         <form class="subscription-form">
             <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
+            <button type="submit" id="subscribe-button">Subscribe</button>
         </form>
     </div>
    </modal>
+   </div>
    <footer class="footer">
     <p>&copy; 2024 RainyDays. All rights reserved.</p>
    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
